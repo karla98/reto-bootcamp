@@ -1,0 +1,132 @@
+/* HEADER */
+.Header{
+  display: flex;
+  width: 100%; /* Siempre declarar el ancho de un componente */
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px; /* padding vertical */
+  background-color: #252525;
+  color: whitesmoke;
+}
+
+.Logo{
+  width: 80px;
+  height: 80px;
+}
+
+.Terms{
+  font-size: 24px;
+}
+/* Fin HEADER */
+
+/* HERO */
+.Hero{
+  background-image: url("/public/img/hero.jpg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;/* Forzar tamaño de la imagen */
+  background-position: center;
+
+  /* Centrar contenido div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* pone un texto debajo del otro */
+
+  /* Estilos texto*/
+  color: whitesmoke;
+
+}
+
+.Hero-title{
+  font-size: 50px;
+}
+
+
+.Hero-subtitle{
+  font-size: 30px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+/* Fin HERO */
+
+/* MAIN */
+main{
+  background-color: #252525;
+  padding: 0 5% 5% 5%;
+}
+.main-title{
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 30px;
+  margin: 0;
+}
+
+.custom-hr {
+  border: none;
+  height: 1px; 
+  background-color: whitesmoke;
+}
+
+
+/* Fin MAIN*/
+
+/* CARD */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* evita que se desborden los cards de su contenedor padre */
+  justify-content: space-between;
+  padding-top: 5%;
+
+} 
+
+.card{
+  background-color: rgba(153, 153, 153, 0.4);
+  display: flex;
+  border-radius: 5px;
+  width: 220px;
+  height: 450px;
+  flex-direction: column;
+  margin: 0 20px 30px 0; /* Aplica valores de margen individualmente: superior, derecho, inferior, izquierdo */
+  overflow: hidden; /* Evita el desbordamiento del contenido */
+
+}
+
+.card h2 {
+  font-size: 14px;
+  color: whitesmoke;
+  text-align: center;
+  background-color: #252525;
+}
+
+.card-description{
+  width: 100%;
+  color: whitesmoke;
+  font-size: 14px;
+  padding: 10px 5px;
+  overflow: hidden;
+
+}
+
+.card-button{
+  margin-top: auto;
+  color: whitesmoke;
+  background-color: #71EA00;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  border-radius: 0 0 5px 5px; /* Aplica esquina redondeada solo en la parte inferior */
+  justify-content: center;
+}
+
+.card-button:hover{
+  box-shadow: 0px -4px 8px #71EA00;
+}
+
+/* Fin CARD */
+
+/* FOOTER */
+
+/* Fin FOOTER */
