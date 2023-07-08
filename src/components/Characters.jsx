@@ -1,4 +1,8 @@
+import {useNavigate} from 'react-router-dom';
+
 export function Characters({character}){
+    const navigate = useNavigate();
+
     if (!character) {
         return null; // Si character es undefined, retornar null
       }
@@ -12,7 +16,7 @@ export function Characters({character}){
                 <p><strong>Status:</strong>{character.status || '--'}</p>
                 <p><strong>Species:</strong>{character.species || '--'}</p>
             </div>
-            <button className="card-button">More</button>
+            <button onClick={() => navigate(`/character/${character.id}`)} className="card-button">More</button>
 
         </div>
     )

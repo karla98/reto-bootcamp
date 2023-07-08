@@ -1,3 +1,23 @@
+:root {
+  --white: white;
+  --black: #252525;
+  --green: #71EA00;
+}
+
+body {
+  font-family: "Gill Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
 /* HEADER */
 .Header{
   display: flex;
@@ -127,6 +147,208 @@ main{
 
 /* Fin CARD */
 
+/* PAGINACION */
+.pagination {
+  display: flex;
+  justify-content: center; /* Alineación horizontal */
+  align-items: center; /* Alineación vertical */
+  
+  padding: 10px 0 40px 0; /* superior, derecho, inferior, izquierdo */
+  background-color: #252525;
+  color: whitesmoke;
+}
+
+.pagination p{
+  margin: 0 10px 0 10px;
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 20px;
+  background-color: #71EA00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  box-shadow: 0px -4px 8px #71EA00;
+}
+
+
+/* Fin PAGINACION */
+
 /* FOOTER */
+.clearfix {
+  float: none;
+  clear: both;
+}
+footer {
+  width: 100%;
+  background-color: #252525;
+
+  padding: 20px 0 20px 0; /* superior, derecho, inferior, izquierdo */
+
+  color: whitesmoke;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center; /* Alineación vertical */
+}
+
+.Logo-footer{
+  width: 40px;
+  height: 40px;
+}
 
 /* Fin FOOTER */
+
+
+/* INFO COMPONENT */
+
+
+/* Fin INFO COMPONENT */
+
+
+/*    TERMS Privacy */
+.terms-privacy {
+  padding: 10px 50px;
+  background-color: var(--black);
+  color: var(--white);
+  height: 90vh;
+}
+
+/*FIN TERMS Privacy*/
+
+
+
+
+/***  Chraracter Info  ***/
+
+.character-list {
+  padding: 10px 50px;
+  background-color: var(--black);
+}
+
+.character-list h2 {
+  text-align: center;
+  color: var(--white);
+}
+
+.characterinfo {
+  background-color: var(--black);
+}
+
+.characterinfo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: var(--white);
+}
+
+.characterinfo-left {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.characterinfo-image {
+  height: 90vh;
+}
+
+.characterinfo-right {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--white);
+  padding: 10px 30px;
+}
+
+.characterinfo-name {
+  text-align: center;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 15px;
+  width: 95%;
+}
+
+.characterinfo-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 10px;
+  width: 90%;
+}
+
+.characterinfo-episode {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.characterinfo-footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.characterinfo-button {
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.characterinfo-button:hover {
+  box-shadow: 0px -4px 8px var(--green);
+}
+
+.characterinfo-pages {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.characterinfo-change_page {
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.characterinfo-change_page:hover:not(:disabled) {
+  box-shadow: 0px -4px 8px var(--green);
+}
+
+.characterinfo-change_page:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.characterinfo-number {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/***  FIN  Chraracter Info  ***/
+
