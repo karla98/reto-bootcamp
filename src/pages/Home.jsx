@@ -92,7 +92,7 @@ export function Home() {
       <main>
         <h2 className="main-title">Characters List</h2>
         <hr className="custom-hr"></hr>
-        <div className="card-container">
+        <div className="card-container-rym">
           {
             characters &&
               characters.length > 0 &&

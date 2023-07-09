@@ -8,15 +8,15 @@ export function Characters({character}){
       }
     
     return(
-        <div className="card">
+        <div className="card-rym">
             <h2>{character.name || '--'}</h2>
             <img src={character.image || 'img/no_image.jpg'} alt={character.name || '--'}/>
-            <div className="card-description">
+            <div className="card-description-rym">
                 <p><strong>Location:</strong>{character.location.name || '--'}</p>
                 <p><strong>Status:</strong>{character.status || '--'}</p>
                 <p><strong>Species:</strong>{character.species || '--'}</p>
             </div>
-            <button onClick={() => navigate(`/character/${character.id}`)} className="card-button">More</button>
+            <button onClick={() => navigate(`/character/${character.id}`)} className="card-button-rym">More</button>
 
         </div>
     )
