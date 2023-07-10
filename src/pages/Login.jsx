@@ -7,15 +7,15 @@ export function Login() {
     <>
       <div className="container-page">
 
-        <div class="background-shapes">
-          <div class="rectangle1 bottom-left"></div>
-          <div class="rectangle2 bottom-left"></div>
-          <div class="rectangle3 bottom-left"></div>
+        <div className="background-shapes">
+          <div className="rectangle1 bottom-left"></div>
+          <div className="rectangle2 bottom-left"></div>
+          <div className="rectangle3 bottom-left"></div>
 
 
-          <div class="rectangle1 top-right"></div>
-          <div class="rectangle2 top-right"></div>
-          <div class="rectangle3 top-right"></div>
+          <div className="rectangle1 top-right"></div>
+          <div className="rectangle2 top-right"></div>
+          <div className="rectangle3 top-right"></div>
 
         </div>
 

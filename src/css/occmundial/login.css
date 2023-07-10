@@ -99,6 +99,8 @@
     font-size: 20px;
     margin-right: 5px;
     border-bottom: none !important;
+ 
+    margin-top: 30%;
 }
 
 
@@ -107,10 +109,46 @@
     border-left: none !important;
     border-right: none !important;
     background-color: transparent !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+   
+    align-items: center !important;
+    /* Alineación vertical */
 }
 
-.input-border {
-    border-bottom: 3px solid var(--primary-color);
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    box-shadow: 0px 2px 0px 0px var(--error);
+    outline: 0px 2px 0px 0px var(--error);
+    border-bottom: none !important;
+}
+
+.form-control{
+    border-bottom: 3px solid var(--primary-color) !important;
+}
+
+.form-control:focus{
+    border-bottom: 3px solid var(--terciary-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+.form-label{
+    margin: 0 !important;
+}
+
+.mb-3{
+    display: flex !important;
+
+}
+
+.invalid-feedback {
+    position: absolute;
+    top: 80%;
+    left: 10%;
 }
 
 .button-login {
@@ -159,7 +197,6 @@
     top: -24px;
     left: 0;
     border-radius: 32px;
-    /*background: linear-gradient(270deg, #4581B2, #1360A1);*/
     background: linear-gradient(270deg, #f29393, #de5d5d);
 
     transform: rotate(-45deg);
@@ -171,7 +208,6 @@
     top: 420px;
     left: 50px;
     border-radius: 60px;
-    /*background: #1360A1;*/
     background: #de5d5d;
 
     transform: rotate(-45deg);
@@ -187,7 +223,6 @@
 .bg-skew .shape-bar-1 {
     border-radius: 20px;
     position: absolute;
-    /*background-color: rgba(69, 129, 178, 0.49);*/
     background-color: rgba(255, 90, 90, 0.49);
     top: 857px;
     right: -10px;
@@ -198,7 +233,6 @@
 .bg-skew .shape-bar-2 {
     border-radius: 20px;
     position: absolute;
-    /*background-color: rgba(69, 129, 178, 0.49);*/
     background-color: rgba(255, 90, 90, 0.49);
     top: 899px;
     left: -10px;
@@ -209,7 +243,6 @@
 .bg-skew .shape-bar-3 {
     border-radius: 20px;
     position: absolute;
-    /*background-color: rgba(19, 96, 161, 0.75);*/
     background-color: rgba(255, 90, 90, 0.75);
     top: 870px;
     left: calc(50% - 1016px);
